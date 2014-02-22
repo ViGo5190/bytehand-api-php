@@ -10,7 +10,7 @@ bytehand-api-php is a strang php script for sending sms via bytehand.
 Version
 ----
 
-0.1
+0.2
 
 Tech
 -----------
@@ -23,18 +23,35 @@ Installation
 --------------
 Just use composer
 
-Config
+
+
+Use
 --------------
 
 ```php
 <?php
-return array(
-    'id' => 0000,
-    'key' => "XXXXXXXXXXXXXXX",
-    'from' => "SMS-INFO",
-);
+
+$config = array(
+              'id' => 0000,
+              'key' => "XXXXXXXXXXXXXXX",
+              'from' => "SMS-INFO",
+          );
+ByteHandAPI\smser::init($config);
+
+
+
+$message = new ByteHandAPI\message();
+echo $message->to('cell number')->text("test message")->send()->getStatus();
+$message_id = $message->getId();
+
+$message_old = new ByteHandAPI\message($message_id);
+echo $mmm->getStatus();
+
+
+
 ?>
 ```
+
 
 
 

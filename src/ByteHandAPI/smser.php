@@ -8,7 +8,7 @@
 namespace ByteHandAPI;
 
 
-class smser implements Interfaces\smser
+final class smser implements Interfaces\smser
 {
 
     private static $ssl = true;

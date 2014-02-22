@@ -11,18 +11,18 @@ date_default_timezone_set ( 'Etc/GMT-4' );
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-
+// INIT
 $config = require('config.php');
+ByteHandAPI\smser::init($config);
 
 
 
-$sender = ByteHandAPI\smser::init($config);
+$message = new ByteHandAPI\message();
+echo $message->to('cell number')->text("test 2")->send()->getStatus();
+$message_id = $message->getId();
+
+$message_old = new ByteHandAPI\message($message_id);
+echo $mmm->getStatus();
 
 
-//print_r( $sender::sendMessage('+10000000000','Hello!?') );
-//
-print_r( $sender::checkBalance() );
-print_r( $sender::checkMessageStatus(67712275045867270) );
 
-
-echo "test";
