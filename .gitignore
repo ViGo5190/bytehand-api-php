@@ -1,0 +1,7 @@
+.idea/
+Vagrantfile
+vagrant-php-dev-box/
+vendor/
+composer.phar
+composer.lock
+.vagrant/
