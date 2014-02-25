@@ -9,7 +9,7 @@ namespace ByteHandAPI;
 
 use ByteHandAPI\smser;
 
-final class message implements Interfaces\message
+class message implements Interfaces\message
 {
     private $to;
     private $text;
