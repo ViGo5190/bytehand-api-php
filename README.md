@@ -7,6 +7,10 @@ bytehand-api-php is a strang php script for sending sms via bytehand.
   - Check balance
   - Check SMS status
 
+About ByteHand
+=========
+[ByteHand](http://www.bytehand.com/?r=b773476a61167edd) - is a service for sending sms for global. Please, use my referral link [http://www.bytehand.com/?r=b773476a61167edd](http://www.bytehand.com/?r=b773476a61167edd)
+
 Version
 ----
 
