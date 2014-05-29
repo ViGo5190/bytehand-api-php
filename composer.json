@@ -1,17 +1,21 @@
 {
     "name": "vigo5190/bytehand-api-php",
     "description": "Sending sms via ByteHand",
+    "keywords": ["php", "sms", "bytehand"],
     "minimum-stability": "stable",
+    "homepage": "https://github.com/ViGo5190/bytehand-api-php",
+    "license": "MIT",
     "authors": [
         {
-            "name": "ViGo5190",
-            "email": "i@vig.gs"
+            "name": "Stanislav Gumeniuk",
+            "email": "i@vigo.su",
+            "homepage": "http://vigo.su",
+            "role": "Developer"
         }
     ],
     "autoload": {
         "psr-0": {
             "ByteHandAPI": "src/"
-
         }
     },
     "require": {
